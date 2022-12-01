@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
 
     }
 
@@ -115,6 +116,31 @@ public class Main {
         System.out.println("Если спортсмен будет терять по  " + loseWeight2 + " грамм в день, то он похудеет через  " + days500 + " дней");
         int middleDays = (days250 + days500) / 2;
         System.out.println("В среднем потребуется " + middleDays + " день, чтобы добиться результата");
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
+        int addPercent = 10;
+        int mashaNew = (int) (masha + (addPercent/100f) * masha);
+        int mashaYear = masha * 12;
+        int mashaYearNew = mashaNew * 12;
+        int differenceMasha = mashaYearNew - mashaYear;
+        System.out.println("Маша теперь получает " + mashaNew + " рублей. Годовой доход вырос на " + differenceMasha + " рублей" );
+        int denisNew = (int) (denis + (addPercent/100f) * denis);
+        int denisYear = denis * 12;
+        int denisYearNew = denisNew * 12;
+        int differenceDenis = denisYearNew - denisYear;
+        System.out.println("Денис теперь получает " + denisNew + " рублей. Годовой доход вырос на " + differenceDenis + " рублей" );
+        int kristinaNew = (int) (kristina + (addPercent/100f) * kristina);
+        int kristinaYear = kristina * 12;
+        int kristinaYearNew = kristinaNew * 12;
+        int differenceKristina = kristinaYearNew - kristinaYear;
+        System.out.println("Кристина теперь получает " + kristinaNew + " рублей. Годовой доход вырос на " + differenceKristina + " рублей" );
+
+
 
 
     }
