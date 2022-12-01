@@ -114,7 +114,8 @@ public class Main {
         System.out.println("Если спортсмен будет терять по  " + loseWeight1 + " грамм в день, то он похудеет через  " + days250 + " дней");
         int days500 = weightGr / loseWeight2;
         System.out.println("Если спортсмен будет терять по  " + loseWeight2 + " грамм в день, то он похудеет через  " + days500 + " дней");
-        int middleDays = (days250 + days500) / 2;
+        double loseWeightMiddle = (loseWeight1 + loseWeight2) / 2;
+        double middleDays = weightGr / loseWeightMiddle;
         System.out.println("В среднем потребуется " + middleDays + " день, чтобы добиться результата");
     }
 
