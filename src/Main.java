@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
 
     }
 
@@ -75,7 +76,29 @@ public class Main {
         short whitePots = (short) (totalClasses * white);
         short brownPots = (short) (totalClasses * brown);
         System.out.println("В школе, где " + totalClasses + " классов, нужно " + whitePots + " банок белой краски и " + brownPots + " банок коричневой краски" );
-
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        short weightBanana = 80;
+        short banana = 5;
+        short totalWeightBananas = (short) (weightBanana * banana);
+        short milk100 = 105;
+        short milk = 2;
+        short weightMilk = (short) (milk100 * milk);
+        short ice = 2;
+        short weightOneIce = 100;
+        short weightIceCream = (short) (ice * weightOneIce);
+        short eggs = 4;
+        short weightEgg = 70;
+        short weightEggs = (short) (eggs* weightEgg);
+        int totalWeightGr = totalWeightBananas + weightMilk + weightIceCream + weightEggs;
+        System.out.println("Вес такого завтрака составил " + totalWeightGr + " гр");
+        int grPerKg = 1000;
+        float totalWeightKg = totalWeightGr/(float)grPerKg;
+        System.out.println("Вес такого завтрака составил " + totalWeightKg + " кг");
+        int WeightKg = totalWeightGr / 1000;
+        int remainderGr = totalWeightGr % 1000;
+        System.out.println("Вес такого завтрака составил " + WeightKg + " кг " + remainderGr + " гр");
 
     }
 }
