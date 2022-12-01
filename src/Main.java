@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
 
     }
 
@@ -99,6 +100,22 @@ public class Main {
         int WeightKg = totalWeightGr / 1000;
         int remainderGr = totalWeightGr % 1000;
         System.out.println("Вес такого завтрака составил " + WeightKg + " кг " + remainderGr + " гр");
+
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        int weightKG = 7;
+        int kgPerGr = 1000;
+        int loseWeight1 = 250;
+        int loseWeight2 = 500;
+        int weightGr = weightKG * kgPerGr;
+        int days250 = weightGr / loseWeight1;
+        System.out.println("Если спортсмен будет терять по  " + loseWeight1 + " грамм в день, то он похудеет через  " + days250 + " дней");
+        int days500 = weightGr / loseWeight2;
+        System.out.println("Если спортсмен будет терять по  " + loseWeight2 + " грамм в день, то он похудеет через  " + days500 + " дней");
+        int middleDays = (days250 + days500) / 2;
+        System.out.println("В среднем потребуется " + middleDays + " день, чтобы добиться результата");
+
 
     }
 }
