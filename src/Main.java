@@ -117,6 +117,7 @@ public class Main {
         double loseWeightMiddle = (loseWeight1 + loseWeight2) / 2;
         double middleDays = weightGr / loseWeightMiddle;
         System.out.println("В среднем потребуется " + middleDays + " день, чтобы добиться результата");
+
     }
 
     public static void task8() {
