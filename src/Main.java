@@ -38,5 +38,14 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача 3");
+        byte pupilLudPav = 23;
+        byte pupilAnSer = 27;
+        byte pupilEkAn = 30;
+        short totalPaper = 480;
+        byte totalPupils = (byte) (pupilLudPav + pupilAnSer + pupilEkAn);
+        short paperOnePupil = (short) (totalPaper / totalPupils);
+        System.out.println("На каждого ученика рассчитано " + paperOnePupil + " листов бумаги");
+
+
     }
 }
