@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
 
     }
 
@@ -63,6 +64,17 @@ public class Main {
         int productivityOneMonth = productivityOneMin * month;
         System.out.println("За месяц машина произвела " + productivityOneMonth + " штук бутылок");
 
+    }
+    public static void task5() {
+        System.out.println("Задача 5");
+        short totalPots = 120;
+        byte white = 2;
+        byte brown = 4;
+        byte potsOneClass = (byte) (white + brown);
+        short totalClasses = (short) (totalPots / potsOneClass);
+        short whitePots = (short) (totalClasses * white);
+        short brownPots = (short) (totalClasses * brown);
+        System.out.println("В школе, где " + totalClasses + " классов, нужно " + whitePots + " банок белой краски и " + brownPots + " банок коричневой краски" );
 
 
     }
